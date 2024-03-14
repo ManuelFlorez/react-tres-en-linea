@@ -1,12 +1,17 @@
 # Tres en línea
 
-## construir imagen de contenedor
+```bash
+npm install
+npm run build
+```
+
+## Construir imagen de contenedor
 
 ```bash
 $docker build -t webserver .
 ```
 
-## correr el contenedor
+## Correr el contenedor
 
 ```bash
 $docker run -it --rm -d -p 8080:80 --name web webserver
